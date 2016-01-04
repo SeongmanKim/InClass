@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Comment"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_weight="0.17" />
+
+        <Button
+            android:id="@+id/addcommentback_addument"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/backbutton"
+             />
+
+        <Button
+            android:id="@+id/addcommentsend_addument"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+ 
+             android:background="@drawable/checkbox"  />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/addcommenttextView_addument"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:gravity="left|top"
+        android:inputType="textMultiLine" />
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#00BFFF" />
+
+    
+
+</LinearLayout>

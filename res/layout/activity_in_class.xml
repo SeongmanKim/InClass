@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Page of this. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <!-- Main Page contains scheduler, ument etc.. -->
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="1"
+        android:background="@drawable/title_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheduler"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_weight="0.17" />
+
+			 <Button
+                android:id="@+id/sortument"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/title_background"
+                android:gravity = "center" 
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                 
+                 />
+		
+            <Button
+                android:id="@+id/addbutton_activity"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/title_background"
+                android:text="+"
+                android:gravity = "center" 
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cont_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.4"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- BUTTON LAYER -->
+
+    <LinearLayout
+        android:id="@+id/button_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/scheduler_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/scheduler_clicked" />
+
+        <Button
+            android:id="@+id/ument_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ument_unclicked" />
+
+        <Button
+            android:id="@+id/message_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/message_unclicked" />
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/setting_unclicked" />
+    </LinearLayout>
+
+</LinearLayout>
