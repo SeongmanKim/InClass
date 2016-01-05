@@ -23,29 +23,6 @@ import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import com.devsmart.android.ui.*;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.mysql.jdbc.ResultSet;

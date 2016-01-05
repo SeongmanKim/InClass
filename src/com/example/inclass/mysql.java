@@ -25,6 +25,7 @@ public class mysql {
 	//public boolean c=false;
 /*
  * connect the data base. 
+ * shaoyu. read this
  */
 	public void connectDB()
 	{        
@@ -33,8 +34,9 @@ public class mysql {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
 					String url = "jdbc:mysql://senior-07.eng.utah.edu";
-					conn = (Connection) DriverManager.getConnection(url, "shaoyu", "shaoyu");
-					Log.i("MySQL", "Internet Connected");
+					// DATABASE MYSQL username/password deleted.
+					conn = (Connection) DriverManager.getConnection(url, "", "");
+					//Log.i("MySQL", "Internet Connected");
 				}catch (Exception e){
 				} 
 	}
